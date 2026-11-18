@@ -1,10 +1,9 @@
 const image = document.getElementById("image");
-// const preview = document.getElementById("preview");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
 
-    // e.preventDefault();
+    e.preventDefault();
 
     const file = image.files[0];
 
@@ -29,6 +28,7 @@ form.addEventListener("submit", function (e) {
     };
     reader.readAsDataURL(file);
 });
+
 
 
 
